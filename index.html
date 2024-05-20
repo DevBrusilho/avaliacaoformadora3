@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avaliação Formadora 2</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div>
+		<h1>
+			<div id="fotonoh1"> 
+			</div>
+			Cadastro de Usuário
+			
+		</h1>
+		</div>
+		<nav>
+
+		</nav>
+	</header>
+	<main>
+		<form>
+			<!-- só funciona assim no html-->
+			<section id="infopessoal">
+				<h2> Informações Pessoais:</h2>
+				<hr>
+				<p>
+					<label class="etiqueta1" id="label1">Nome:</label>
+					<input type="text" name="nome" placeholder="Digite seu nome" minlength="1" maxlength="10" title="Nome">
+					<hr>
+				</p>
+				<p>
+					<label class="etiqueta2" >Sobrenome:</label>
+					<input type="text" name="sobrenome"  placeholder="Digite seu sobrenome"  minlength="1" maxlength="25" title="sobrenome">
+					<hr>
+				</p>
+				<p>
+					<label class="etiqueta1">E-mail:</label>
+					<input type="text" name="e-mail"  placeholder="Digite seu e=mail" minlength="1" maxlength="30" title="E-mail">
+					<hr>
+				</p>
+				<p>
+					<label class="etiqueta2">Senha:</label>
+					<input type="password" name="senha"  placeholder="Digite sua senha"  minlength="1" maxlength="20" title="Senha">
+					<hr>
+				</p>
+				<p>
+					<label class="etiqueta1"> Confirmação:</label>
+					<input type="password" name="Confirm"  placeholder="Confirma sua senha"  minlength="1" maxlength="20" title="Confirme sua senha">
+					<hr>
+				</p>
+			</section>
+			<section id="Contato">
+				<h2>Contato:</h2>
+				<p>
+					<label class="etiqueta2" id="label1" >Telefone:</label>
+					<input type="tel" name="telefone" pattern="^\d{2}-\d{4}-\d{4}$" placeholder="Digite seu telefone" title="telefone">
+					<hr>
+				</p>
+				<p>
+					<label class="etiqueta1">Endereço:</label>
+					<input type="text"name="endereço"  placeholder="Digite seu endereço"  minlength="1" maxlength="40" title="Endereço">
+					<hr>
+				</p>
+				<p>
+					<label class="etiqueta2">Cidade:</label>
+					<input type="text"name="cidade"  placeholder="Digite sua cidade" minlength="1" maxlength="20" title="Cidade">
+					<hr>
+				</p>
+				<p>
+					<label class="etiqueta1">Estado:</label>
+					<input type="text"name="estado"  placeholder="Digite seu estado" minlength="1" maxlength="25" title="Estado">
+					<hr>
+				</p>
+				<p>
+					<label class="etiqueta2">CEP:</label>
+					<input type="text" name="cep" 
+					 placeholder="Digite seu CEP" pattern="^\d{5}-\d{3}$">
+					 <hr>
+				</p>
+			</section>
+			<section id="interesseacad">
+				<h2>Interesses Acadêmicos:</h2>
+				<hr>
+				<h3 id="Academico">Áreas de Interesse:</h3>
+				<hr>
+				<div id="areasfacul">
+					<div id="esquerda">
+						<input type="checkbox" name="adm" class="check">Administração  <br>
+						<input type="checkbox" name="analise" class="check"> Análise e Desemvolvimento de Sistemas  <br>
+						<input type="checkbox" name="Arquitetura" class="check">Arquitetura  <br>
+						<input type="checkbox" name="Biomed" class="check"> Biomedicina <br>
+						<input type="checkbox" name="contabilidade" class="check"> Ciências Contábeis <br>
+						<input type="checkbox" name="design" class="check"> Design de Interiores  <br>
+						<input type="checkbox" name="direito" class="check"> Direito  <br>
+						<input type="checkbox" name="educacaofisica" class="check"> Educação Física  <br>
+						<input type="checkbox" name="EngProd" class="check"> Engenharia de Produção  <br>
+					</div>
+					<div id="direita">
+						<input type="checkbox" name="enf" class="check"> Enfermagem <br>
+						<input type="checkbox" name="farmacia" class="check"> Farmácia  <br>
+						<input type="checkbox" name="fisio" class="check"> Fisioterapia   <br>
+						<input type="checkbox" name="gastro" class="check"> Gastronomia  <br>
+						<input type="checkbox" name="marketing" class="check"> Marketing   <br>
+						<input type="checkbox" name="nutri" class="check"> Nutrição   <br>
+						<input type="checkbox" name="odonto" class="check"> Odontologia <br>
+						<input type="checkbox" name="psico" class="check"> Psicologia  <br>
+						<input type="checkbox" name="publi" class="check"> Publicidade   <br>
+					</div>
+				</div>
+			<div class="dropdown">	
+				
+				<button class="dropbtn">Semestre de Ingresso:</button>
+				<div class="dropdown-content">
+					<a href="primeirosemestre.html">1º Semestre</a>
+					<a href="segundosemestre.html">2º Semestre</a>
+					<a href="terceirosemestre.html">3º Semestre</a>
+					<a href="quartosemestre.html">4º Semestre</a>
+				</div>
+			</div>
+		</section>
+		<section id="expprofi">
+			<h2>Experiência Profissional:</h2>
+			<p>
+				
+				<label class="etiqueta1" id="label1">Empresa:</label>
+				<input type="text"name="empresa" placeholder="Digite o nome da empresa" minlength="1" maxlength="25" title="Empresa">
+				<hr>
+			</p>
+			<p>
+				<label class="etiqueta2">Cargo:</label>
+				<input type="text"name="Cargo" placeholder="Digite o seu cargo" minlength="1" maxlength="25" title="Cargo">
+				<hr>
+			</p>
+			<p>
+				<label class="etiqueta1">Data de Início:</label>
+				<input type="date"name="datainicio"   title="Data de Início">
+				<hr>
+			</p>
+			<p>
+				<label class="etiqueta2">Data do Fim:</label>
+				<input type="date" name="datafim"   title="Data do Fim">
+				<hr>
+			</p>
+		</section>	
+		<section id="obs">
+			<h2>Observação:</h2>
+			<hr>
+			<textarea cols="70" rows="8"></textarea>
+			<p>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Limpar">
+			</p>
+
+		</section>
+		<P>
+			
+		</P>
+		</form>
+	</main>
+	<footer>
+
+	</footer>
+	
+</body>
+</html>
